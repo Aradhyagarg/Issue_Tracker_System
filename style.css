@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 1em;
+    border-radius: 20px;
+    margin-top: 18px;
+    width: 800px;
+    text-align: center;
+}
+
+.headernew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    color: aquamarine;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.issue {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: rgb(10, 177, 65);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgb(10, 177, 65);
+}
+
+button:hover {
+    color: black;
+    background-color: #fff;
+}
+
+.priority-high {
+    color: rgb(221, 1, 1);
+    font-weight: bold;
+}
+
+.priority-medium {
+    color: rgb(221, 144, 2);
+}
+
+.priority-low {
+    color: rgb(1, 151, 1);
+}
+
+#update-issue-modal{
+    border: 1.5px solid black;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+}
+
+#update-issue-modal h2{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 123, 0);
+}
+
+#update-issue-modal form{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#update-issue-modal input {
+    width: 90%;
+    height: 25px;
+}
+
+#update-issue-modal textarea {
+    width: 90%;
+}
+
+#update-issue-modal select {
+    width: 90%;
+    height: 25px;
+}
+
+.createbtn {
+    width: 30%;
+    height: 40px;
+    background-color: hsl(199, 94%, 43%);
+    border: 2px solid hsl(199, 94%, 43%) ;
+}
+
+.createBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#create-issue-modal{
+    border: 1.5px solid black;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+}
+
+#create-issue-modal h2{
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
+
+#create-issue-modal form{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#create-issue-modal input {
+    width: 90%;
+    height: 25px;
+}
+
+#create-issue-modal textarea {
+    width: 90%;
+}
+
+#create-issue-modal select {
+    width: 90%;
+    height: 25px;
+}
+
+.CreateIssuebtn button{
+    background-color: rgb(255, 230, 0);
+    color: black;
+    border: 2px solid rgb(177, 159, 0);
+}
+
+.CreateIssuebtn button:hover {
+    background-color: #fff;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form textarea,
+form select,
+form button {
+    margin-bottom: 20px;
+}
+
+form input[type="file"] {
+    margin-bottom: 20px;
+}
+
+.createIssueButton,
+.updateIssueButton,
+.cancelButton {
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.createIssueButton {
+    background-color: #4caf50;
+    color: #fff;
+    border: 2px solid #4caf50;
+}
+
+.createIssueButton:hover {
+    background-color: #45a049;
+}
+
+.updateIssueButton {
+    background-color: #2196f3;
+    color: #fff;
+    border: 2px solid #2196f3;
+}
+
+.updateIssueButton:hover {
+    background-color: #1e87f0;
+}
+
+.cancelButton {
+    background-color: #ccc;
+    color: #333;
+    border: 2px solid #ccc;
+}
+
+.cancelButton:hover {
+    background-color: #b3b3b3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#create-issue-modal,
+#update-issue-modal {
+    animation: fadeIn 0.5s ease-in-out;
+}
